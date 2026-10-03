@@ -163,6 +163,14 @@ function toggleCustomUrl(provider) {
         moonshot: {
             url: 'https://api.moonshot.cn/v1/chat/completions',
             model: 'moonshot-v1-8k'
+        },
+        siliconflow: {
+            url: 'https://api.siliconflow.cn/v1/chat/completions',
+            model: 'Qwen/Qwen2.5-7B-Instruct'
+        },
+        doubao: {
+            url: 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
+            model: 'doubao-lite-4k'
         }
     };
     

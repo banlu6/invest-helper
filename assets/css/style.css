@@ -1050,12 +1050,85 @@ button {
     color: var(--text-tertiary);
 }
 
+.free-model-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.free-model-card {
+    padding: 18px;
+    background: var(--bg-main);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.free-model-card:hover {
+    border-color: var(--primary);
+    background: var(--bg-active);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.free-model-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.free-model-name {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-primary);
+}
+
+.free-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    background: #fff7e6;
+    color: #d48806;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.free-badge-green {
+    background: #f6ffed;
+    color: #52c41a;
+}
+
+.free-model-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.free-model-model {
+    font-size: 12px;
+    color: var(--primary);
+    font-family: monospace;
+    background: var(--primary-light);
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    display: inline-block;
+}
+
 /* ================================
    响应式设计
    ================================ */
 
 @media (max-width: 1024px) {
     .welcome-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .free-model-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -1161,6 +1234,10 @@ button {
     
     .platform-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .free-model-grid {
+        grid-template-columns: 1fr;
     }
 }
 

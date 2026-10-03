@@ -50,10 +50,12 @@
                     <label>模型服务商</label>
                     <select id="apiProvider">
                         <option value="">请选择服务商</option>
-                        <option value="deepseek">DeepSeek (深度求索)</option>
-                        <option value="zhipu">智谱 AI (GLM)</option>
-                        <option value="qwen">通义千问 (Qwen)</option>
-                        <option value="moonshot">Kimi (月之暗面)</option>
+                        <option value="zhipu">智谱 AI（glm-4-flash 永久免费）</option>
+                        <option value="deepseek">DeepSeek（新用户送额度）</option>
+                        <option value="siliconflow">硅基流动（多款免费模型）</option>
+                        <option value="qwen">通义千问（阿里云）</option>
+                        <option value="moonshot">Kimi（月之暗面）</option>
+                        <option value="doubao">豆包（字节跳动）</option>
                         <option value="openai">OpenAI (GPT-4, GPT-3.5)</option>
                         <option value="custom">自定义 (OpenAI 兼容格式)</option>
                     </select>
@@ -84,6 +86,67 @@
                 
                 <div class="status-msg" id="statusMessage"></div>
             </form>
+        </div>
+        
+        <div class="api-card">
+            <h3>🎁 免费大模型推荐（零成本体验）</h3>
+            <p>以下平台都提供免费额度或免费模型，注册就能用，无需付费：</p>
+            
+            <div class="free-model-grid">
+                <a href="https://open.bigmodel.cn/" target="_blank" class="free-model-card">
+                    <div class="free-model-header">
+                        <span class="free-model-name">智谱 AI</span>
+                        <span class="free-badge">完全免费</span>
+                    </div>
+                    <div class="free-model-desc">glm-4-flash 模型永久免费不限量，回答质量不错</div>
+                    <div class="free-model-model">推荐模型：glm-4-flash</div>
+                </a>
+                <a href="https://platform.deepseek.com/" target="_blank" class="free-model-card">
+                    <div class="free-model-header">
+                        <span class="free-model-name">DeepSeek</span>
+                        <span class="free-badge free-badge-green">送额度</span>
+                    </div>
+                    <div class="free-model-desc">新用户注册送免费额度，深度思考能力强</div>
+                    <div class="free-model-model">推荐模型：deepseek-chat</div>
+                </a>
+                <a href="https://dashscope.aliyun.com/" target="_blank" class="free-model-card">
+                    <div class="free-model-header">
+                        <span class="free-model-name">通义千问</span>
+                        <span class="free-badge free-badge-green">送额度</span>
+                    </div>
+                    <div class="free-model-desc">阿里云出品，新用户有百万 token 免费额度</div>
+                    <div class="free-model-model">推荐模型：qwen-turbo</div>
+                </a>
+                <a href="https://platform.moonshot.cn/" target="_blank" class="free-model-card">
+                    <div class="free-model-header">
+                        <span class="free-model-name">Kimi</span>
+                        <span class="free-badge free-badge-green">送额度</span>
+                    </div>
+                    <div class="free-model-desc">月之暗面出品，长文本能力强，新用户送额度</div>
+                    <div class="free-model-model">推荐模型：moonshot-v1-8k</div>
+                </a>
+                <a href="https://siliconflow.cn/" target="_blank" class="free-model-card">
+                    <div class="free-model-header">
+                        <span class="free-model-name">硅基流动</span>
+                        <span class="free-badge">多款免费</span>
+                    </div>
+                    <div class="free-model-desc">聚合多家开源模型，很多完全免费调用</div>
+                    <div class="free-model-model">推荐模型：Qwen/Qwen2.5-7B-Instruct</div>
+                </a>
+                <a href="https://open.bigmodel.cn/" target="_blank" class="free-model-card">
+                    <div class="free-model-header">
+                        <span class="free-model-name">豆包 API</span>
+                        <span class="free-badge free-badge-green">送额度</span>
+                    </div>
+                    <div class="free-model-desc">字节跳动出品，新用户有免费额度</div>
+                    <div class="free-model-model">推荐模型：doubao-lite-4k</div>
+                </a>
+            </div>
+            
+            <div class="disclaimer-box" style="margin-top: 20px; margin-bottom: 0;">
+                <h4>💡 申请步骤</h4>
+                <p>1. 点击上面的卡片进入对应平台官网 → 2. 注册账号 → 3. 在「API Key管理」中创建密钥 → 4. 把 Key 复制到上面的输入框即可</p>
+            </div>
         </div>
         
         <div class="api-card">

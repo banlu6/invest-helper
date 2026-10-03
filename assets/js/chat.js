@@ -296,7 +296,8 @@ async function callExternalApi(question) {
         
         if (apiConfig.provider === 'openai' || apiConfig.provider === 'custom' || 
             apiConfig.provider === 'deepseek' || apiConfig.provider === 'zhipu' ||
-            apiConfig.provider === 'qwen' || apiConfig.provider === 'moonshot') {
+            apiConfig.provider === 'qwen' || apiConfig.provider === 'moonshot' ||
+            apiConfig.provider === 'siliconflow' || apiConfig.provider === 'doubao') {
             response = await callOpenAiCompatible(question);
         }
         
